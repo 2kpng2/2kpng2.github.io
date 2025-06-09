@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* carrussel=================================================================*/
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: 0px auto;
+      padding: 0px;
+      overflow: hidden;
+      transition: 0.5s ease-in-out;
+      
+
+  }
+
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: #1F1F1F;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+.container {
+    max-width: 5;
+    margin: 0 auto;
+}
+.header {
+    
+    background-image:url(images/MOSCONI-FRENTE-FEBRERO2025.svg)  ;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    min-height: 2cm;
+    display: flex;
+    align-items: center;
+    color: #afafaf;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex; 
+    justify-content: space-between;
+    
+}
+
+
+
+.logo {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+   
+    
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+   
+}
+
+.menu .navbar ul li a:hover {
+    color: #CF2D3A;
+}
+
+#menu {
+    display: none;
+   
+}
+
+.menu-icono {
+    width: 70px;
+   
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+    
+}
+
+.header-txt {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.header-txt h1,
+span,
+h3 {
+    font-size: 110px;
+    letter-spacing: 5px;
+    color: #CF2D3A ;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 15px;
+    
+}
+
+.header-txt span {
+    font-size: 25px;
+
+}
+
+.header-txt p {
+
+    color: #AFAFAF;
+    padding: 0 250px;
+    margin: 25px 0;
+
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #CF2D3A ;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 25px 0;
+    border: 0;
+}
+
+.btn-1:hover {
+    
+    background-color:#CF2D3A;
+}
+
+.header-dir {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.dir h3 {
+
+    font-size: 25px;
+    
+
+
+}
+
+
+.dir p {
+
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+.dir li{
+
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+.welcome {
+    display: flex;
+}
+
+.welcome-1 {
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+
+}
+
+
+
+.welcome-2 {
+    width: 100% ;
+    padding:  150px 250px 150px 100px;
+    background-color: #191919;
+    color: #afafaf;
+    
+
+
+}
+.welcome-3{
+    display: flex left;
+}
+.welcome-4 {
+    
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    width: 30%;
+  
+
+}
+
+.welcome-5 {
+    width: 100%;
+    padding: 150px 250px 150px 100px;
+    background-color: #191919;
+    color: #afafaf;
+   
+
+}
+ul {
+    list-style-type: square; /* Cambia los puntos a cuadrados */
+
+    color: #afafaf;
+  }
+  
+  ol {
+    list-style-type: upper-roman; /* Cambia los números a números romanos en mayúsculas */
+  }
+  
+  li {
+    padding: 5px;
+    color: #AFAFAF;
+    font-family: 'Poppins';
+
+  }
+  
+
+
+
+h2 {
+    font-size: 90px;
+    line-height: 100px;
+    color: #df3232;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+    letter-spacing: 0px;
+}
+
+p {
+    font-size: 16px;
+    color: #afafaf;
+    margin: 25px 0;
+
+}
+
+.b1 {
+    color: #CF2D3A !important;
+    font-size: large;
+}
+.b2{
+    color: #AFAFAF !important;
+    font-size: large;
+}
+
+
+
+
+
+
+@media(max-width:991px) {
+
+    .menu {
+        padding: 25px;
+        
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1F1F1F;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-txt {
+        margin-bottom: 15px;
+    }
+
+    .header-txt h1 {
+        font-size: 90px;
+    }
+
+    .header-txt p {
+        padding: 0;
+        margin: 15px 0;
+
+    }
+
+
+    .header-dir {
+        flex-direction: column;
+    }
+
+    .dir p {
+
+        font-size: 18px;
+    }
+
+    .welcome {
+        flex-direction: column;
+    }
+
+    .welcome-1 {
+        display: none;
+    }
+
+    .welcome-2 {
+        width: 100%;
+        padding: 30px ;
+        text-align: center;
+    }
+
+  
+
+}
+
+@media(max-width:600px) {
+    .menu {
+        padding: 25px;
+        
+    }
+
+    .menu label {
+        display: initial;
+        position: fixed; top: 10px; left: 0;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1F1F1F;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        background-image:url(images/FRENTE-MOSCONI-CELU2.svg) ;
+    }
+    .header-content {
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-txt {
+        margin-bottom: 15px;
+    }
+
+    .header-txt h1 {
+        font-size: 90px;
+    }
+
+    .header-txt p {
+        padding: 0;
+        margin: 15px 0;
+
+    }
+
+
+    .header-dir {
+        flex-direction: column;
+    }
+
+    .dir p {
+
+        font-size: 18px;
+    }
+
+    .welcome {
+        flex-direction: column;
+    }
+
+    .welcome-1 {
+        display: none;
+    }
+
+    .welcome-2 {
+        width: 100%;
+        padding: 30px ;
+        text-align: center;
+    }
+   
+
+   .welcome-5{
+        width: 100%;
+        padding: 30px ;
+        text-align: center;
+   }  
+}
+
+*{ 
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    transition: 0.5 ;
+
+
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+.payment-methods {
+    margin-bottom: 10px;
+    
+}
+
+.payment-methods img {
+    width: 100px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    
+}
+
+footer p {
+    margin: 0 ;
+    font-size: 0.9em;
+}
+
+.btn-2{
+   display: inline-block;
+    padding: 11px 25px;
+    background-color: #CF2D3A ;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    margin: 25px 0;
+    border: 0;
+   
+}
+
+.btn-2:hover {
+    background-color: #000000;
+}
+
+
